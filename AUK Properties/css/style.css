@@ -1,0 +1,379 @@
+/*============= RESET STYLE =============
+
+/*-- iPhone X Remove Gutters
+Ignore W3C Validation error for this style. --*/
+html {
+   padding: env(safe-area-inset);
+}
+
+/*-- Body Resets --*/
+body {
+   font-family: 'Lato', sans-serif;
+   color: #505962;
+}
+
+/*============= NAVIGATION =============*/
+.navbar-brand img {
+   height: 4rem;
+}
+.navbar-dark {
+   padding: .6rem 1rem;
+   font-size: .9rem;
+   font-weight: 700;
+   text-transform: uppercase;
+   letter-spacing: .1rem;
+}
+
+.navbar-nav li {
+   padding-right: .8rem;
+}
+.navbar-nav .nav-link {
+   padding-top: .8rem;
+   color: white!important;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:hover.active {
+   color: #f2a600!important;
+}
+
+.navbar .dropdown-menu {
+   background-color: #343a40!important;
+   
+}
+
+.dropdown-menu a{
+   font-size: .6rem;
+   color: #f2a600!important;
+
+}
+
+.dropdown-menu p{
+   font-size: .6rem;
+   color: #f2a600!important;
+
+}
+/* ======== about page ======= */
+.jumbotron {
+   background-color: #f2a600; /* Orange */
+   color: #f2f3f4;
+   padding: 100px 25px;
+}
+
+.about-inner {
+   background-image: url('../img/08-02-20_Penthouse 3.jpg');
+   position: fixed;
+}
+.container-fluid {
+   padding: 60px 50px;
+}
+
+.logo {
+   font-size: 200px;
+}
+
+@media screen and (max-width: 768px) {
+   .col-sm-4 {
+     text-align: center;
+     margin: 25px 0;
+   }
+}
+
+/*============= LANDING PAGE =============*/
+
+/*-- Fixed Landing Page Section --*/
+.landing {
+   height: 75vh;
+   margin-bottom: 60px;
+}
+
+.landing h2{
+   color: #f2a600;
+}
+.home-inner {
+   background-image: url('../img/08-02-20_Penthouse 2.jpg');
+   position: fixed;
+
+}
+/*-- Landing Page Content --*/
+.caption {
+   z-index: 1;
+   position: absolute;
+   top: 40%;
+   text-align: center;
+}
+.btn {
+   border-width: medium;
+   border-radius: 0;
+   padding: .5rem 1.2rem;
+}
+
+
+/*============= MARKETING SECTION =============*/
+.marketing .col-lg-4 {
+   margin-bottom: 20px;
+   text-align: center;
+}
+.marketing h2 {
+   font-weight: 400;
+}
+.marketing .col-lg-4 p {
+   margin-right: 10px;
+   margin-left: 10px;
+}
+/*-- Scrollspy Offset --*/
+
+
+
+/*============= PORTFOLIO SECTION =============*/
+.featurette-divider {
+   margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+   font-weight: 300;
+   font-size: 50px;
+   line-height: 1;
+   letter-spacing: -1px;
+}
+
+/*============= TESTIMONIALS SECTION =============*/
+
+
+
+/*============= CONTACT SECTION =============*/
+.footer {
+   background-color: #565b61;
+}
+.footer img {
+   height: 2rem;
+}
+.footer a {
+   color: white;
+   text-decoration: none;
+}
+ul.social {
+   list-style-type: none;
+   display: flex;
+   padding: 0;
+   margin: 0 auto;
+   max-width: 11.8rem;
+}
+ul.social li {
+   margin: 0 auto;
+   display: inline;
+   padding-right: 1.2rem;
+}
+.footer .svg-inline--fa {
+   font-size: 1.6rem;
+}
+
+.footer .svg-inline--fa:hover {
+   color: #f2a600;
+}
+hr.socket {
+   border-top: .2rem solid #666b71;
+}
+/*============= MEDIA QUERIES =============*/
+
+/* Medium (md) devices (tablets, 768px and under) */
+@media (max-width: 767.98px) {
+
+}
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
+
+/*-- Fixed Landing Page Section --*/
+.landing {
+   position: relative;
+   width: 100%;
+   display: table;
+   z-index: -1;
+}
+.home-wrap {
+   clip: rect(0, auto, auto, 0);
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+}
+.home-inner {
+   display: table;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-size: cover;
+   background-position: center center;
+   transform: translateZ(0);
+   -webkit-transform: translateZ(0);
+   will-change: transform;
+}
+
+.blog-post div {
+   display: block;
+
+}
+
+.container blog-post blog-header{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translateX(-50%) translateY(-50%);
+}
+
+/*-- Values and partners section --*/
+.carousel body {
+   font-family: "Open Sans", sans-serif;
+   margin-top: 200px
+}
+
+.carousel h2 {
+   color: #333;
+   text-align: center;
+   text-transform: uppercase;
+   font-family: "Roboto", sans-serif;
+   font-weight: bold;
+   position: relative;
+   margin: 25px 0 50px
+}
+
+.carousel h2::after {
+   content: "";
+   width: 100px;
+   position: absolute;
+   margin: 0 auto;
+   height: 3px;
+   background: #ffdc12;
+   left: 0;
+   right: 0;
+   bottom: -10px
+}
+
+.carousel {
+   width: 650px;
+   margin: 0 auto;
+   padding-bottom: 50px
+}
+
+.carousel .item {
+   color: #999;
+   font-size: 14px;
+   text-align: center;
+   overflow: hidden;
+   min-height: 340px
+}
+
+.carousel .item a {
+   color: #eb7245
+}
+
+.carousel .img-box {
+   width: 145px;
+   height: 145px;
+   margin: 0 auto;
+   border-radius: 50%
+}
+
+.carousel .img-box img {
+   width: 100%;
+   height: 100%;
+   display: block;
+   border-radius: 50%
+}
+
+.carousel .testimonial {
+   padding: 30px 0 10px
+}
+
+.testimonial {
+   color: #000000;
+   font: Times Roman
+}
+
+.carousel .overview {
+   text-align: center;
+   padding-bottom: 5px
+}
+
+.carousel .overview b {
+   color: #333;
+   font-size: 15px;
+   text-transform: uppercase;
+   display: block;
+   padding-bottom: 5px
+}
+
+.carousel .star-rating i {
+   font-size: 18px;
+   color: #ffdc12
+}
+
+.carousel .carousel-control {
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+   background: #999;
+   text-shadow: none;
+   top: 4px
+}
+
+.carousel-control i {
+   font-size: 20px;
+   margin-right: 2px
+}
+
+.carousel-control.left {
+   left: auto;
+   right: 40px
+}
+
+.carousel-control.right i {
+   margin-right: -2px
+}
+
+.carousel .carousel-indicators {
+   bottom: 15px
+}
+
+.carousel-indicators li,
+.carousel-indicators li.active {
+   width: 11px;
+   height: 11px;
+   margin: 1px 5px;
+   border-radius: 50%
+}
+
+.carousel-indicators li {
+   background: #e2e2e2;
+   border-color: transparent
+}
+
+.carousel-indicators li.active {
+   border: none;
+   background: #888
+}
+/* artical pictures */
+.center-block {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
